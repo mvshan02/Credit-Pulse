@@ -1,0 +1,19 @@
+{
+  "name": "credit-pulse",
+  "version": "0.1.0",
+  "description": "Monitor Codex quota windows and available credits with an animated local dashboard.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Credit Pulse",
+    "shortDescription": "Know your limits. Keep your flow.",
+    "longDescription": "Check Codex usage, credit balances and reset times. Open a private blue-to-red dashboard with configurable warnings and optional browser notifications.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "brandColor": "#267DFF",
+    "defaultPrompt": ["Check my Codex usage and credit limits.", "Open the Credit Pulse dashboard."]
+  }
+}
