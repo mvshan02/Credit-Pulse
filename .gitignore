@@ -1,0 +1,8 @@
+.test-tools/
+.vscode-test/
+__pycache__/
+*.pyc
+debug.log
+credit-pulse-vscode/tests/*.png
+credit-pulse-vscode/*.vsix
+credit-pulse-vscode/desktop/bin/
