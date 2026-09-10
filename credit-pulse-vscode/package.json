@@ -1,0 +1,52 @@
+{
+  "name": "credit-pulse",
+  "displayName": "Credit Pulse - Codex Usage",
+  "description": "Codex usage with a real Windows desktop overlay, chat analytics, tailored recommendations, and status previews.",
+  "version": "0.9.2",
+  "license": "MIT",
+  "repository": {"type":"git","url":"https://github.com/mvshan02/Credit-Pulse.git","directory":"credit-pulse-vscode"},
+  "bugs": {"url":"https://github.com/mvshan02/Credit-Pulse/issues"},
+  "keywords": ["codex","usage","quota","productivity"],
+  "icon": "media/icon.png",
+  "publisher": "Vathushan",
+  "engines": { "vscode": "^1.95.0" },
+  "categories": ["Other"],
+  "extensionKind": ["ui"],
+  "main": "./src/extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "capabilities": {"untrustedWorkspaces": {"supported": false,"description":"Trust the workspace before launching the local Codex executable."}, "virtualWorkspaces": false},
+  "contributes": {
+    "commands": [
+      {"command":"creditPulse.open","title":"Credit Pulse: Open Usage Console"},
+      {"command":"creditPulse.desktop","title":"Credit Pulse: Float on Desktop","icon":"$(desktop-download)"},
+      {"command":"creditPulse.closeDesktop","title":"Credit Pulse: Close Desktop Overlay"},
+      {"command":"creditPulse.move","title":"Credit Pulse: Place View Within Window","icon":"$(layout)"},
+      {"command":"creditPulse.sidebar","title":"Credit Pulse: Show Sidebar"},
+      {"command":"creditPulse.refresh","title":"Credit Pulse: Refresh Usage","icon":"$(refresh)"},
+      {"command":"creditPulse.copySnapshot","title":"Credit Pulse: Copy Diagnostic Snapshot","icon":"$(copy)"}
+    ],
+    "keybindings": [{"command":"creditPulse.open","key":"ctrl+alt+u","mac":"cmd+alt+u"}],
+    "viewsContainers": {"activitybar":[{"id":"creditPulse","title":"Credit Pulse","icon":"media/pulse.svg"}]},
+    "views": {"creditPulse":[{"type":"webview","id":"creditPulse.usage","name":"Usage","icon":"media/pulse.svg"}]},
+    "configuration": {
+      "title":"Credit Pulse",
+      "properties": {
+        "creditPulse.warningThreshold":{"type":"number","default":80,"minimum":50,"maximum":95,"description":"Warn when a Codex quota window reaches this percentage.","scope":"application"},
+        "creditPulse.notifications":{"type":"boolean","default":true,"description":"Show VS Code notifications for fresh quota warnings, even when the widget is closed.","scope":"application"},
+        "creditPulse.emojiAnimations":{"type":"boolean","default":true,"description":"Animate the robot and quota feedback, respecting reduced motion.","scope":"application"},
+        "creditPulse.historyEnabled":{"type":"boolean","default":false,"description":"Opt in to reading local Codex session logs across workspaces for token analytics and historical quota fallback. Off clears cached results immediately.","scope":"application"},
+        "creditPulse.showRequestText":{"type":"boolean","default":false,"description":"Show prompt excerpts inside the dashboard only. Common credential patterns are masked, but detection is not complete. Never included in desktop, hover, or copied stats.","scope":"application"},
+        "creditPulse.themePreset":{"type":"string","default":"matrix","enum":["matrix","cyberpunk","operator","ice","glass","custom"],"enumDescriptions":["Black and radioactive green.","Neon cyan and magenta.","Amber command-center display.","Cold blue console.","Glossy translucent control surface.","Use your custom panel colors."],"description":"Visual preset for the Credit Pulse console.","scope":"application"},
+        "creditPulse.refreshSeconds":{"type":"number","default":60,"minimum":30,"maximum":600,"description":"Usage refresh interval in seconds.","scope":"application"},
+        "creditPulse.safeColor":{"type":"string","default":"#79ff9b","pattern":"^#[0-9a-fA-F]{6}$","description":"Low-usage highlight color.","scope":"application"},
+        "creditPulse.warningColor":{"type":"string","default":"#ffe66d","pattern":"^#[0-9a-fA-F]{6}$","description":"Approaching-limit highlight color.","scope":"application"},
+        "creditPulse.dangerColor":{"type":"string","default":"#ff6b72","pattern":"^#[0-9a-fA-F]{6}$","description":"At-limit highlight color.","scope":"application"},
+        "creditPulse.panelBackground":{"type":"string","default":"#0d1712","pattern":"^#[0-9a-fA-F]{6}$","description":"Widget panel background color.","scope":"application"},
+        "creditPulse.panelSurface":{"type":"string","default":"#17271f","pattern":"^#[0-9a-fA-F]{6}$","description":"Cards and controls background color.","scope":"application"},
+        "creditPulse.glowIntensity":{"type":"number","default":75,"minimum":0,"maximum":100,"description":"Highlight glow intensity.","scope":"application"},
+        "creditPulse.codexPath":{"type":"string","default":"","description":"Optional absolute path to a Codex executable. Otherwise use the installed Codex extension or PATH.","scope":"application"}
+      }
+    }
+  },
+  "scripts": {"test":"node --test tests/*.test.js","test:security":"node --test tests/security*.test.js"}
+}

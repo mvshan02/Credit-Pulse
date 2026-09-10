@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'none'; img-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; style-src {{CSP}} 'unsafe-inline'; script-src 'nonce-{{NONCE}}';">
+  <link rel="stylesheet" href="{{STYLE}}">
+  <title>Credit Pulse</title>
+</head>
+<body data-theme="matrix">
+<main class="console" id="console">
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <aside class="cheer" id="cheer" aria-hidden="true"></aside>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" role="img" focusable="false">
+          <path class="logo-ring" d="M12 2.5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 12 2.5Z"/>
+          <path class="logo-core" d="M12 6.1 8.1 12h2.9l-1.1 5.9 4-6h-3.1l1.2-5.8Z"/>
+          <path class="logo-spark logo-spark-a" d="M18.8 5.1v1.8m-.9-.9h1.8"/>
+          <path class="logo-spark logo-spark-b" d="M5.2 14.5v1.4m-.7-.7h1.4"/>
+        </svg>
+      </span>
+      <div class="brand-copy">
+        <strong>CREDIT PULSE</strong>
+        <small>CODEX DEV HUD &#183; V0.9</small>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button class="collapse desktop-action" id="desktop-toggle" aria-label="Show desktop overlay" aria-pressed="false" disabled>DESKTOP <span>&#8599;</span></button>
+    </div>
+  </header>
+  <div class="drawer" id="drawer"><div class="drawer-inner">
+    <p id="desktop-note" role="status">Connecting to the desktop companion...</p>
+    <section class="mascot glass-card" aria-live="polite">
+      <div class="bot-shell"><span id="mascot-face" class="agent-face" role="img" aria-label="Status robot"></span><i></i><i></i><i></i></div>
+      <div class="mascot-copy"><small>STATUS AGENT</small><strong id="mascot-label">INITIALIZING</strong><span id="pressure-copy">Waiting for telemetry</span></div>
+      <span class="status-orb" aria-hidden="true"></span>
+    </section>
+
+    <div class="signal"><span id="source">CONNECTING</span><span id="health">WAITING</span></div>
+    <section class="hero glass-card">
+      <div class="hero-label"><span id="gauge-kind">5H SESSION</span><small id="estimate-badge" hidden>ESTIMATED</small></div>
+      <div class="orbit"><i></i><i></i><i></i></div>
+      <div class="readout"><strong id="usage">--</strong><span>USED</span></div>
+      <svg viewBox="0 0 200 200" aria-hidden="true"><circle class="track" cx="100" cy="100" r="83"/><circle class="meter" id="ring" cx="100" cy="100" r="83"/></svg>
+    </section>
+    <div class="spectrum" aria-hidden="true"></div><div class="spectrum-label"><span>SAFE</span><span>CAUTION</span><span>CRITICAL</span></div>
+
+    <section class="quotas">
+      <article id="primary" class="quota-card glass-card"><div class="row"><span>SESSION <small id="primary-duration"></small></span><strong id="primary-used">--</strong></div><div class="bar" role="progressbar" aria-label="Session quota used" aria-valuemin="0" aria-valuemax="100"><i></i></div><div class="reset-row"><small class="reset">RESET UNKNOWN</small><small class="estimate" hidden>INFERRED</small></div></article>
+      <article id="secondary" class="quota-card glass-card"><div class="row"><span>LONG WINDOW <small id="secondary-duration"></small></span><strong id="secondary-used">--</strong></div><div class="bar" role="progressbar" aria-label="Long quota used" aria-valuemin="0" aria-valuemax="100"><i></i></div><div class="reset-row"><small class="reset">RESET UNKNOWN</small></div></article>
+    </section>
+
+    <section class="developer-hud glass-card">
+      <div class="section-title"><span>⌁</span><strong>PROGRAMMER HUD</strong><small id="score-label">SCORE --</small></div>
+      <div class="metrics">
+        <article><small>SESSION FREE</small><strong id="metric-session">--</strong></article>
+        <article><small>CACHE REUSE</small><strong id="metric-cache">--</strong></article>
+        <article><small>AVG REQUEST</small><strong id="metric-average">--</strong></article>
+        <article><small>CHAT DEPTH</small><strong id="metric-depth">--</strong></article>
+      </div>
+      <div class="score-track" aria-label="Context efficiency score"><i id="score-bar"></i></div>
+    </section>
+
+    <section class="recommendation glass-card">
+      <div class="section-title"><span>⚡</span><strong>TAILORED ADVICE</strong><small>LIVE CONTEXT</small></div>
+      <div id="advice"></div>
+    </section>
+
+    <div class="credit row glass-card"><div><span>CREDIT BALANCE</span><small>SEPARATE FROM QUOTA</small></div><strong id="credits">--</strong></div>
+    <p id="notice" role="status" hidden></p>
+
+    <details id="chats-panel" open>
+      <summary><span>CHATS &amp; REQUESTS</span><span id="chat-count">SCANNING</span></summary>
+      <div class="details-body">
+        <p class="explain">Local processed tokens, not billing. History is opt-in; prompt text stays hidden by default.</p>
+        <label class="search"><span>⌕</span><input id="chat-filter" type="search" placeholder="Filter chats or requests" aria-label="Filter chats or requests"></label>
+        <div id="chats" class="chats"></div>
+        <label class="toggle-label" for="history-enabled">ANALYZE LOCAL HISTORY <input id="history-enabled" type="checkbox"></label>
+        <label class="toggle-label" for="show-request-text">REVEAL PROMPT EXCERPTS <input id="show-request-text" type="checkbox"></label>
+        <p id="history-state" class="history-state" role="status" aria-live="polite">History analysis is off.</p>
+        <p class="explain">Reveals up to 90 characters from recent prompts in this panel only. The desktop, hover preview, and copied stats never include prompt text or project paths.</p>
+      </div>
+    </details>
+
+    <details id="settings-panel">
+      <summary><span>CONSOLE CONFIG</span><span id="theme-name">MATRIX</span></summary>
+      <div class="details-body settings">
+        <span class="config-label">THEME PRESETS</span>
+        <div class="themes">
+          <button data-theme="matrix"><i>01</i><strong>MATRIX</strong><small>Radioactive terminal</small></button>
+          <button data-theme="cyberpunk"><i>02</i><strong>CYBERPUNK</strong><small>Cyan / magenta</small></button>
+          <button data-theme="operator"><i>03</i><strong>OPERATOR</strong><small>Amber command deck</small></button>
+          <button data-theme="ice"><i>04</i><strong>ICECORE</strong><small>Cold blue console</small></button>
+          <button data-theme="glass"><i>05</i><strong>GLASS</strong><small>Glossy iOS surface</small></button>
+        </div>
+        <label for="threshold">WARNING THRESHOLD <output id="threshold-value">80%</output></label><input type="range" id="threshold" min="50" max="95" step="5" value="80">
+        <label class="toggle-label" for="notifications">VS CODE ALERTS <input id="notifications" type="checkbox" checked></label>
+        <label class="toggle-label" for="emoji-animations">ROBOT ANIMATIONS <input id="emoji-animations" type="checkbox" checked></label>
+        <span class="config-label">CUSTOM SIGNAL COLORS</span>
+        <div class="colors"><label>SAFE <input id="safe-color" type="color" value="#79ff9b"></label><label>WARN <input id="warning-color" type="color" value="#ffe66d"></label><label>DANGER <input id="danger-color" type="color" value="#ff6b72"></label><label>BASE <input id="panel-background" type="color" value="#0d1712"></label><label>SURFACE <input id="panel-surface" type="color" value="#17271f"></label></div>
+        <label for="glow">GLOW OUTPUT <output id="glow-value">75%</output></label><input type="range" id="glow" min="0" max="100" step="5" value="75">
+        <button id="reset-colors" class="wide">RESET MATRIX DEFAULTS</button>
+      </div>
+    </details>
+
+    <nav aria-label="Console actions"><button id="refresh">&#8635; <span>REFRESH</span></button><button id="copy-snapshot">&#10697; <span>COPY STATS</span></button></nav>
+    <footer><span class="live-dot"></span><span id="observed">WAITING FOR CODEX</span><span class="ticker">● MONITORING</span></footer>
+  </div></div>
+</main>
+<template id="robot-template">
+  <svg class="robot-art" viewBox="0 0 40 34" aria-hidden="true" focusable="false">
+    <path class="bubble-antenna" d="M20 8V4"/>
+    <circle class="bubble-led" cx="20" cy="3" r="2"/>
+    <rect class="bubble-head" x="6" y="8" width="28" height="23" rx="8"/>
+    <path class="bubble-ears" d="M3 17v6m34-6v6"/>
+    <path class="bubble-eye" d="M14 16v4m12-4v4"/>
+    <path class="bubble-mouth" d="M15 25Q20 29 25 25"/>
+  </svg>
+</template>
+<script nonce="{{NONCE}}" src="{{SCRIPT}}"></script>
+</body>
+</html>
