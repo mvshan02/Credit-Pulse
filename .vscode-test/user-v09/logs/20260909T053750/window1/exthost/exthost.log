@@ -1,0 +1,14 @@
+2026-09-09 05:37:54.996 [info] Extension host with pid 19068 started
+2026-09-09 05:37:55.161 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-09-09 05:37:55.202 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-09-09 05:37:55.341 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-09-09 05:37:55.447 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-09-09 05:37:55.651 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-09-09 05:37:56.222 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.openRepositoryInParentFolders', provide the URI of a resource or 'null' for any resource.
+2026-09-09 05:37:56.222 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.showProgress', provide the URI of a resource or 'null' for any resource.
+2026-09-09 05:37:56.276 [info] Eager extensions activated
+2026-09-09 05:37:56.324 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-09-09 05:37:56.332 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-09-09 05:37:56.370 [info] ExtensionService#_doActivateExtension local-credit-pulse.credit-pulse, startup: false, activationEvent: 'onStartupFinished'
+2026-09-09 05:37:57.767 [info] Extension host terminating: received terminate message from renderer
+2026-09-09 05:37:57.782 [info] Extension host with pid 19068 exiting with code 0

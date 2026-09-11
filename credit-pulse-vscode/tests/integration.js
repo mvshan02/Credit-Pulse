@@ -9,7 +9,7 @@ exports.run = async function () {
   const manifest=require("../package.json");
   const extension=vscode.extensions.getExtension(`${manifest.publisher}.${manifest.name}`);
   assert.ok(extension,"Extension discovered by VS Code");
-  assert.equal(extension.packageJSON.version,"0.9.2");
+  assert.equal(extension.packageJSON.version,"0.9.3");
   assert.equal(vscode.workspace.getConfiguration("creditPulse").get("historyEnabled"),false);
   assert.ok(fs.existsSync(path.join(extension.extensionPath,extension.packageJSON.icon)),"Packaged logo exists");
   await extension.activate();

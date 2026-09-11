@@ -2,7 +2,7 @@
   "name": "credit-pulse",
   "displayName": "Credit Pulse - Codex Usage",
   "description": "Codex usage with a real Windows desktop overlay, chat analytics, tailored recommendations, and status previews.",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "license": "MIT",
   "repository": {"type":"git","url":"https://github.com/mvshan02/Credit-Pulse.git","directory":"credit-pulse-vscode"},
   "bugs": {"url":"https://github.com/mvshan02/Credit-Pulse/issues"},

@@ -86,7 +86,7 @@ python tests/desktop_check.py
 python -m unittest discover -s tests -p "test_release*.py"
 python tools/package_vsix.py
 python tools/release_check.py
-code --install-extension credit-pulse-0.9.2.vsix --force
+code --install-extension credit-pulse-0.9.3.vsix --force
 ```
 
 Source maintainers: follow `RELEASING.md` before public publication. A local

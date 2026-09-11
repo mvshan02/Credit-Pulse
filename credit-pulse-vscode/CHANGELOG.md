@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.9.3
+
+- Mark the generated VSIX as public through `GalleryFlags`, as required by
+  Visual Studio Marketplace for public listing availability.
+
 ## 0.9.2
 
 - Parse current Codex `response_item` user messages so chat titles and request

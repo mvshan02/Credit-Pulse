@@ -1,0 +1,19 @@
+2026-09-07 21:23:31.078 [info] Agent Host process started successfully
+2026-09-07 21:23:31.095 [info] AgentService initialized
+2026-09-07 21:23:31.101 [info] Registering agent provider: copilotcli
+2026-09-07 21:23:31.103 [info] Registering agent provider: claude
+2026-09-07 21:23:31.109 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 21:23:31.137 [info] [Claude] Models refreshed (merged). Count: 0, 
+2026-09-07 21:23:31.167 [info] [CommandAutoApprover] Tree-sitter initialized (bash=available, powershell=available)
+2026-09-07 21:23:31.182 [info] [Copilot] Listing chats to migrate...
+2026-09-07 21:23:31.183 [info] [Copilot] Starting CopilotClient...
+2026-09-07 21:23:31.184 [info] [Copilot] Set CLI env: GITHUB_COPILOT_INTEGRATION_ID=vscode-chat
+2026-09-07 21:23:31.191 [info] [Copilot] Resolved CLI path: c:\Users\DEEL\AppData\Local\Programs\Microsoft VS Code\a44adf7f53\resources\app\node_modules.asar.unpacked\@github\copilot-win32-x64\index.js
+2026-09-07 21:23:31.221 [info] [Claude] SDK not downloaded yet; deferring the migratable chat list
+2026-09-07 21:23:31.425 [info] [WebSocketProtocol] Server listening on socket \\.\pipe\vscode-agent-host-c362691c2f8adee9a7b3aabb1eb7667c251c80c6bece71a0bbb7a6192d8f66ab-8JVqoG3hSUTDEJagV7IVEg
+2026-09-07 21:23:31.642 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 21:23:31.644 [info] AgentService: shutting down all providers...
+2026-09-07 21:23:31.645 [info] [Copilot] Shutting down...
+2026-09-07 21:23:32.475 [info] [Copilot] Client unavailable while listing chats to migrate: Canceled
+2026-09-07 21:23:32.475 [warning] [AgentService] provider initialization failed before Automations could refresh for copilotcli Provider copilotcli cannot enumerate its native session catalog yet
+2026-09-07 21:23:32.475 [warning] [AgentService] Failed to restore Agent-Merge-enabled sessions Provider copilotcli cannot enumerate its native session catalog yet

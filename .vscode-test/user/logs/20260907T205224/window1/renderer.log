@@ -1,0 +1,17 @@
+2026-09-07 20:52:25.627 [info] [AgentHost:renderer] Acquiring MessagePort to agent host...
+2026-09-07 20:52:25.940 [info] [ChatModelSelection] event=no-model-at-toolbar-build surface="workbench" sessionKey=undefined conversationKey=undefined modelTarget=undefined storageKey="chat.currentLanguageModel.panel" widgetViewKind="view"
+2026-09-07 20:52:26.220 [info] [AgentHost:renderer] MessagePort acquired, creating client...
+2026-09-07 20:52:26.223 [info] [ChatModelSelection] event=no-model-at-toolbar-build surface="workbench" sessionKey="local" conversationKey="vscode-chat-session://local/OWJhOTRlNDMtZmZhOC00Y2IwLWI0NmItOGE0MDE1OGRiODMz" modelTarget=undefined storageKey="chat.currentLanguageModel.panel" widgetViewKind="view"
+2026-09-07 20:52:26.304 [info] Started local extension host with pid 19732.
+2026-09-07 20:52:26.373 [info] Started initializing default profile extensions in extensions installation folder. file:///d%3A/S_P/Projects/New%20folder/.vscode-test/extensions
+2026-09-07 20:52:26.483 [info] [AgentHost:renderer] Protocol connection established; clientId=8fb9eb1a-6060-410a-9269-1fae5d7ca993
+2026-09-07 20:52:26.782 [info] Completed initializing default profile extensions in extensions installation folder. file:///d%3A/S_P/Projects/New%20folder/.vscode-test/extensions
+2026-09-07 20:52:26.830 [info] Loading development extension at d:\S_P\Projects\New folder\credit-pulse-vscode
+2026-09-07 20:52:27.721 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-09-07 20:52:27.949 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 20:52:27.976 [info] [AgentHost] Clearing authentication for resource: https://api.github.com
+2026-09-07 20:52:28.072 [error] AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(vscode.window.tabGroups.all.some(group=>group.tabs.some(tab=>tab.label==="Credit Pulse")))
+
+	at exports.run (d:\S_P\Projects\New folder\credit-pulse-vscode\tests\integration.js:12:10)

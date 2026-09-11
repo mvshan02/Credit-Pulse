@@ -1,0 +1,42 @@
+2026-09-07 22:15:05.191 [info] [AgentHost:renderer] Acquiring MessagePort to agent host...
+2026-09-07 22:15:05.585 [info] [ChatModelSelection] event=no-model-at-toolbar-build surface="workbench" sessionKey=undefined conversationKey=undefined modelTarget=undefined storageKey="chat.currentLanguageModel.panel" widgetViewKind="view"
+2026-09-07 22:15:05.861 [info] [AgentHost:renderer] MessagePort acquired, creating client...
+2026-09-07 22:15:05.867 [info] [ChatModelSelection] event=no-model-at-toolbar-build surface="workbench" sessionKey="local" conversationKey="vscode-chat-session://local/NWQyNjgzNmMtNWNmNi00MzBhLWJjYWItY2YxNTQ1Yzg3YTNh" modelTarget=undefined storageKey="chat.currentLanguageModel.panel" widgetViewKind="view"
+2026-09-07 22:15:05.957 [info] Started local extension host with pid 18860.
+2026-09-07 22:15:05.977 [info] [AgentHost:renderer] Protocol connection established; clientId=4b73c3c5-6081-4cbc-933f-e579931ab8c5
+2026-09-07 22:15:06.012 [info] Started initializing default profile extensions in extensions installation folder. file:///d%3A/S_P/Projects/New%20folder/.vscode-test/extensions-v04
+2026-09-07 22:15:06.380 [info] Completed initializing default profile extensions in extensions installation folder. file:///d%3A/S_P/Projects/New%20folder/.vscode-test/extensions-v04
+2026-09-07 22:15:06.427 [info] Loading development extension at d:\S_P\Projects\New folder\credit-pulse-vscode
+2026-09-07 22:15:07.435 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-09-07 22:15:07.653 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.659 [info] [AgentHost] Clearing authentication for resource: https://api.github.com
+2026-09-07 22:15:07.665 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:07.683 [info] [AgentHost] Clearing authentication for resource: https://api.github.com/repos
+2026-09-07 22:15:07.827 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.828 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.828 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.828 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.829 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.830 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.830 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.831 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.831 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.832 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.832 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.833 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:07.833 [info] [AgentHost] No token resolved for resource: https://api.github.com
+2026-09-07 22:15:08.006 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.007 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.007 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.008 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.008 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.009 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.009 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.011 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.012 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.012 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.013 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.014 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.014 [info] [AgentHost] No token resolved for resource: https://api.github.com/repos
+2026-09-07 22:15:08.015 [info] [ChatModelSelection] event=no-model-at-toolbar-build surface="workbench" sessionKey="local" conversationKey="vscode-chat-session://local/NWQyNjgzNmMtNWNmNi00MzBhLWJjYWItY2YxNTQ1Yzg3YTNh" modelTarget=undefined storageKey="chat.currentLanguageModel.panel" widgetViewKind="view"
+2026-09-07 22:15:08.049 [info] Credit Pulse extension-host integration passed: activation, commands, and in-window view focus.

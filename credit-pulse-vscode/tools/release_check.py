@@ -95,6 +95,9 @@ def check_archive(target, root=ROOT, public=False):
             identity = manifest.find("m:Metadata/m:Identity", namespace)
             if identity is None or any(identity.get(key) != package.get(field) for key, field in (("Publisher", "publisher"), ("Version", "version"), ("Id", "name"))):
                 issues.append("VSIX identity differs from package.json")
+            gallery_flags = manifest.find("m:Metadata/m:GalleryFlags", namespace)
+            if gallery_flags is None or gallery_flags.text != "Public":
+                issues.append("VSIX GalleryFlags must be Public")
             for name in RELEASE_FILES:
                 file = root / name
                 if not file.is_file() or not file.resolve().is_relative_to(root.resolve()) or file.is_symlink():

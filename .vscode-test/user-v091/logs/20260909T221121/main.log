@@ -1,0 +1,5 @@
+2026-09-09 22:11:22.095 [info] checkInnoSetupMutex: vscode-updating is held, waiting up to 30s for setup to finish...
+2026-09-09 22:11:53.090 [warning] checkInnoSetupMutex: vscode-updating still held after 30997ms, giving up
+2026-09-09 22:11:53.091 [error] Error: Code is currently being updated. Please wait for the update to complete before launching.
+    at file:///C:/Users/DEEL/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/main.js:592:55230
+    at async jx.startup (file:///C:/Users/DEEL/AppData/Local/Programs/Microsoft%20VS%20Code/a44adf7f53/resources/app/out/main.js:592:54632)

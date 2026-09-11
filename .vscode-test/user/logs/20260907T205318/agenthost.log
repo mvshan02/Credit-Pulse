@@ -1,0 +1,25 @@
+2026-09-07 20:53:20.169 [info] Agent Host process started successfully
+2026-09-07 20:53:20.202 [info] AgentService initialized
+2026-09-07 20:53:20.215 [info] Registering agent provider: copilotcli
+2026-09-07 20:53:20.228 [info] Registering agent provider: claude
+2026-09-07 20:53:20.241 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 20:53:20.262 [info] [Claude] Models refreshed (merged). Count: 0, 
+2026-09-07 20:53:20.282 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 20:53:20.291 [info] [Claude] SDK not downloaded yet; deferring the migratable chat list
+2026-09-07 20:53:20.296 [info] [CommandAutoApprover] Tree-sitter initialized (bash=available, powershell=available)
+2026-09-07 20:53:20.378 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 20:53:20.418 [info] [ProtocolServer] Initialize: clientId=a99c9c33-ac06-4532-adb2-c8fe27985cf2, protocolVersions=[1.0.0, 0.9.0, 0.8.0, 0.7.0, 0.6.0, 0.5.2, 0.5.1]
+2026-09-07 20:53:20.608 [info] [WebSocketProtocol] Server listening on socket \\.\pipe\vscode-agent-host-58aa75da246b2f89ecbed9e73470f9baef8324946b9bddee258222d436c0743b-NMGnog8nP_n7QNORqEAB7g
+2026-09-07 20:53:21.378 [info] [AgentService] pruned 0 stale external session row(s) older than 30 days
+2026-09-07 20:53:21.378 [info] [Copilot] Listing discoverable chats...
+2026-09-07 20:53:21.379 [info] [Copilot] Starting CopilotClient...
+2026-09-07 20:53:21.379 [info] [Copilot] Set CLI env: GITHUB_COPILOT_INTEGRATION_ID=vscode-chat
+2026-09-07 20:53:21.383 [info] [Copilot] Resolved CLI path: c:\Users\DEEL\AppData\Local\Programs\Microsoft VS Code\a44adf7f53\resources\app\node_modules.asar.unpacked\@github\copilot-win32-x64\index.js
+2026-09-07 20:53:21.409 [info] [Claude] SDK not downloaded yet; deferring chat discovery
+2026-09-07 20:53:21.596 [info] [Claude] Auth token unchanged
+2026-09-07 20:53:22.252 [info] [ProtocolServer] Client disconnected: a99c9c33-ac06-4532-adb2-c8fe27985cf2, subscriptions=1
+2026-09-07 20:53:22.255 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 20:53:22.256 [info] [Copilot] BYOK bridge changed; refreshing models
+2026-09-07 20:53:22.258 [info] AgentService: shutting down all providers...
+2026-09-07 20:53:22.258 [info] [Copilot] Shutting down...
+2026-09-07 20:53:22.677 [info] [Copilot] Client unavailable while listing discoverable chats: Canceled

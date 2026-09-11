@@ -1,0 +1,23 @@
+{
+    "telemetry.machineId": "22773d956ed7885ec7dea2ce7c199ec968dc4a0eff96ab24a819cb943a3799f7",
+    "telemetry.sqmId": "{087BD6D2-5598-461B-8841-A9F55340FDA9}",
+    "telemetry.devDeviceId": "0bb066af-a1e5-4984-9d47-dd85b9229e0e",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 35,
+    "windowsState": {
+        "lastActiveWindow": {
+            "uiState": {
+                "mode": 1,
+                "x": 168,
+                "y": 32,
+                "width": 1206,
+                "height": 804
+            }
+        },
+        "openedWindows": []
+    }
+}

@@ -1,0 +1,15 @@
+2026-09-07 20:53:21.067 [info] Extension host with pid 10512 started
+2026-09-07 20:53:21.125 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-09-07 20:53:21.153 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-09-07 20:53:21.244 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-09-07 20:53:21.286 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-09-07 20:53:21.373 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-09-07 20:53:21.535 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.openRepositoryInParentFolders', provide the URI of a resource or 'null' for any resource.
+2026-09-07 20:53:21.535 [warning] [vscode.git] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for 'git.showProgress', provide the URI of a resource or 'null' for any resource.
+2026-09-07 20:53:21.566 [info] Eager extensions activated
+2026-09-07 20:53:21.690 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-09-07 20:53:21.693 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-09-07 20:53:21.715 [info] ExtensionService#_doActivateExtension local-credit-pulse.credit-pulse, startup: false, activationEvent: 'onStartupFinished'
+2026-09-07 20:53:22.027 [warning] local-credit-pulse.credit-pulse created a webview without a content security policy: https://aka.ms/vscode-webview-missing-csp
+2026-09-07 20:53:22.238 [info] Extension host terminating: received terminate message from renderer
+2026-09-07 20:53:22.244 [info] Extension host with pid 10512 exiting with code 0

@@ -1,0 +1,7 @@
+2026-09-07 20:52:27.688 [info] [main] Log level: Info
+2026-09-07 20:52:27.688 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2026-09-07 20:52:27.719 [info] [askpassManager] Creating content-addressed askpass scripts at d:\S_P\Projects\New folder\.vscode-test\user\User\globalStorage\vscode.git\askpass\70789581cae28aa7
+2026-09-07 20:52:27.812 [info] [askpassManager] Successfully created content-addressed askpass scripts
+2026-09-07 20:52:27.857 [info] [main] Using git "2.43.0.windows.1" from "C:\Program Files\Git\cmd\git.exe"
+2026-09-07 20:52:27.857 [info] [Model][doInitialScan] Initial repository scan started
+2026-09-07 20:52:27.859 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)

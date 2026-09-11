@@ -14,7 +14,7 @@ manifest = f'''<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
 <Metadata><Identity Language="en-US" Id="credit-pulse" Version="{version}" Publisher="{publisher}"/>
 <DisplayName>Credit Pulse - Codex Usage</DisplayName><Description xml:space="preserve">Floating Codex usage widget</Description>
-<Tags>codex,usage,credits</Tags><Categories>Other</Categories><GalleryFlags/><Icon>extension/media/icon.png</Icon><License>extension/LICENSE</License>
+<Tags>codex,usage,credits</Tags><Categories>Other</Categories><GalleryFlags>Public</GalleryFlags><Icon>extension/media/icon.png</Icon><License>extension/LICENSE</License>
 <Properties><Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.95.0"/><Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="ui"/></Properties></Metadata>
 <Installation><InstallationTarget Id="Microsoft.VisualStudio.Code"/></Installation><Dependencies/>
 <Assets><Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE" Addressable="true"/><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/media/icon.png" Addressable="true"/></Assets></PackageManifest>'''
